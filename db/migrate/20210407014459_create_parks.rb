@@ -1,0 +1,12 @@
+class CreateParks < ActiveRecord::Migration[6.0]
+  def change
+    create_table :parks do |t|
+      t.string :country
+      t.integer :area
+      t.text :attraction
+      t.text :picture
+
+      t.timestamps
+    end
+  end
+end

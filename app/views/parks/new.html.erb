@@ -1,0 +1,38 @@
+<h1>Add a New Park</h1>
+
+<p>
+    <%= link_to "Back to Parks", parks_path %>
+</p>
+
+<%= form_for @park do |f| %>
+    
+    <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %><br>
+    </p>
+    <p>
+        <%= f.label :country %><br>
+        <%= f.text_field :country %><br>
+    </p>
+    <p>
+        <%= f.label :area %><br>
+        <%= f.text_field :area %><br>
+    </p>
+    <p>
+        <%= f.label :attraction %><br>
+        <%= f.text_field :attraction %><br>
+    </p>
+    <p>
+        <%= f.label :picture_link %><br>
+        <%= f.text_field :picture %><br>
+    </p>
+    <p>
+        <%= f.label :website %><br>
+        <%= f.text_field :website %><br>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+
+<% end %>

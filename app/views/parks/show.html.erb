@@ -1,0 +1,11 @@
+<%= link_to "Back to National Parks list", parks_path %>  |  <%= link_to "Edit Park Details", edit_park_path(@park.id) %>  |  <%= link_to "Delete Park", park_path(@park), method: :delete, data: {confirm: "Are you sure?"} %>
+
+<h1><%= @park.name %></h1>
+Country: <%= @park.country %><br>
+Area (km^2):  <%= @park.area %><br>
+Key attractions: <%= @park.attraction %><br>
+Website:  <a href="<%= @park.website %>"><%= @park.website %></a><br>
+
+<br>
+
+<img src="<%= @park.picture %>">
