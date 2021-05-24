@@ -53,7 +53,7 @@ class ParksController < ApplicationController
 
     private
     def park_params
-        params.require(:name).permit(:country, :area, :attraction, :picture, :website)
+        params.require(:park).permit(:name, :country, :area, :attraction, :picture, :website)
     end
 
 end

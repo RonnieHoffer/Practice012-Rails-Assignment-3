@@ -1,11 +1,11 @@
-<h1>National Parks</h1>
+<div class="general">
 
+<h1 class="page_title">National Parks</h1>
 <%= link_to "Add a New Park", new_park_path %>
-
-<br>
-
 <ul>
     <% @parks.each do |park| %>
         <li><%= link_to park.name, park_path(park.id) %></li>
     <% end %>
 </ul>
+
+</div>
